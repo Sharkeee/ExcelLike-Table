@@ -28,14 +28,14 @@ public class Main {
             }
         }
         int wyborKomorki = Integer.parseInt(JOptionPane.showInputDialog(null, "Wybierz zakres komorek do zsumowania (1-" + liczbaWierszy + ")"));
-
+    
         if (wyborKomorki > liczbaWierszy || wyborKomorki < 0 || (convertedColumn - 1) > liczbaKolumn || (convertedColumn - 1) < 0) {
             System.out.println("Nie udalo sie zsumowac wybranego zakresu komorek. Prawdopodobnie wykroczyles poza granice utworzonej tabeli.");
         } else {
-            System.out.println("\n\nParametry wygenerowanej tabeli:\n Stworzone kolumny(" + letters[0] + " - " + letters[liczbaKolumn - 1] + "). \n Stworzone wiersze: (0-" + liczbaWierszy + ")");
+            System.out.println("Parametry wygenerowanej tabeli:\n Stworzone kolumny(" + letters[0] + " - " + letters[liczbaKolumn - 1] + "). \n Stworzone wiersze: (0-" + liczbaWierszy + ")");
             System.out.println("\nLaczna liczba komorek w wybranym przez Ciebie zakresie to: " + (convertedColumn * wyborKomorki));
         }
     }
 
-    
+
 }
