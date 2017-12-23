@@ -28,7 +28,7 @@ public class Main {
             }
         }
         int wyborKomorki = Integer.parseInt(JOptionPane.showInputDialog(null, "Wybierz zakres komorek do zsumowania (1-" + liczbaWierszy + ")"));
-    
+
         if (wyborKomorki > liczbaWierszy || wyborKomorki < 0 || (convertedColumn - 1) > liczbaKolumn || (convertedColumn - 1) < 0) {
             System.out.println("Nie udalo sie zsumowac wybranego zakresu komorek. Prawdopodobnie wykroczyles poza granice utworzonej tabeli.");
         } else {
